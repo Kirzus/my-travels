@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Quote from "./Quote";
+import Travel from "./Travel";
 
 class App extends Component {
   render() {
@@ -10,17 +10,19 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Simpsons Quotes</h1>
+          <h1 className="App-title">My Travel App</h1>
         </header>
-        <Quote
-          quote="I believe the children are the future... Unless we stop them now!"
-          character="Homer Simpson"
-          image="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FHomerSimpson.png?1497567511939"
+        <Travel
+          destination="Melbourne"
+          country="Australia"
+          distance="16 781"
+          photo="https://www.mantrahotels.com/Portals/0/GalleryImages/System/Locations/Australia/Victoria/Melbourne&Surrounds/Melbourne/Melbourne.t76962.jpg"
         />
-        <Quote
-          quote="Me fail English? That's unpossible"
-          character="Ralph Wiggum"
-          image="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523"
+        <Travel
+          destination="Brazzaville"
+          country="Congo"
+          distance="5 687"
+          photo="https://upload.wikimedia.org/wikipedia/commons/8/89/Brazza_bridge.jpg"
         />
       </div>
     );
